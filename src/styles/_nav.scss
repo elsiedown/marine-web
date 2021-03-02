@@ -1,0 +1,24 @@
+ul.navbar {
+  // position: fixed;
+  // top: 0;
+  background-color: #9AB87A;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  height: 45px;
+  z-index: 9999;
+}
+
+ul.navbar li {
+  display: inline;
+  padding: 10px;
+  margin: 10px;
+  color: black;
+}
+
+ul.navbar li:hover {
+  color: grey;
+}
+

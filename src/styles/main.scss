@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+
+@import '_nav.scss';
+@import '_about.scss';
+@import '_coaching.scss';
+@import '_insta.scss';
+
+
+// Main Colours
+// Palette 1
+// #CE84AD
+// #CE96A6
+// #D1A7A0
+// #9AB87A
+// #305252
+
+
+// Palette 2
+// #EA526F
+// #E76B74
+// #585B56
+// #B8CDA2
+// #2E382E
+
+
+
+// Palette 2
+
+// Main Styling
+
+body, html {
+  margin: 0 auto;
+  height: 100%;
+  width: 100%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  font-family: 'Montserrat', sans-serif;
+  p {
+    color: grey;
+    font-family: 'Montserrat', sans-serif;
+  }
+}
+
+// body {
+//   background-color: #9AB87A;
+// }
+
+.main-layout {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 10px 10px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.sections-layout{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+
+.footer {
+  text-align: center;
+}
