@@ -1,14 +1,54 @@
 .about {
   display: flex;
-  // align-items: center;
+  align-items: center;
   justify-content: center;
   flex-direction: column;
   width: 100%;
   height: 100%;
+  // margin: 20px;
+  padding: 40px;
+  background-color: #BDDFB9;
   h1 {
     text-align: center;
+    // margin: 0;
   }
-  // p {
-  //   margin: 10px 40px 10px 40px;
-  // }
+  img {
+    height: 350px;
+    width: 350px;
+    object-fit: cover;
+    margin-left: 40px;
+    border-radius: 2%;
+  }
+  p {
+    margin: 30px 40px 10px 40px;
+  }
+}
+
+.about-info-main {
+  display: flex;
+  justify-content: center;
+  p {
+    margin: 20px 0 20px 0;
+  }
+}
+
+.about-info {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  // align-items: Center;
+  // justify-content: Center;
+}
+
+.education {
+  ul li {
+    color:grey;
+    list-style-type: none;
+    margin-top: 10px;
+  }
+}
+
+.image-section {
+  display: flex;
+  align-items: center;
 }

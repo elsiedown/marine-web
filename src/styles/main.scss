@@ -1,9 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kavivanar&display=swap');
+@import '~bulma/bulma.sass';
 
 @import '_nav.scss';
 @import '_about.scss';
 @import '_coaching.scss';
 @import '_insta.scss';
+@import '_contact.scss';
 
 
 // Main Colours
@@ -32,12 +35,21 @@ body, html {
   margin: 0 auto;
   height: 100%;
   width: 100%;
+  min-height: 100%;
   overflow-x: hidden;
   scroll-behavior: smooth;
   font-family: 'Montserrat', sans-serif;
+  background-color: #FFFEF9;
   p {
     color: grey;
     font-family: 'Montserrat', sans-serif;
+  }
+  h1 {
+    color: grey;
+    font-size: 40px;
+    font-family: 'Kavivanar', cursive;
+    color: #DAEDD8;
+    text-shadow: 2px 2px #4F7942;
   }
 }
 
@@ -50,7 +62,9 @@ body, html {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 0 10px 10px;
+  // margin: 0 10px 10px;
+  height: 100%;
+  min-height: 100%;
 }
 
 a {
@@ -62,10 +76,99 @@ a {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100%;
   width: 100%;
+  min-height: 100%;
 }
 
-.footer {
+.footer-bit {
   text-align: center;
+  background-color: #DAEDD8;
+  width: 100%;
+  height: 100%;
+  bottom: 0;
+  p {
+    color: #4F7942;
+  }
+  // position: absolute;
+  // margin-top: 60px;
+
+  // padding: 5px;
+
+
+  // justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  // justify-content: center;
+  i {
+    margin-top: 30px;
+    color: #4F7942;
+  }
+}
+
+.home-intro {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  padding: 40px;
+  background-color: #BDDFB9;
+  justify-content: center;
+  img {
+    border-radius: 100%;
+    height: 300px;
+    width: 300px;
+    object-fit: cover;
+    margin-right: 60px;
+  }
+  p {
+    margin: 10px;
+    text-align: center;
+  }
+}
+
+.intro-text {
+  width: 300px;
+  height: 300px;
+  background-color: #DAEDD8;
+  display: flex;
+  align-items: center;
+  // border: #4F7942 solid 1px;
+  p {
+    font-size: 18px;
+    padding: 20px;
+  }
+}
+
+.testimonial {
+  font-style: italic;
+  // margin: 70px 20px 70px 20px;
+  margin: 70px 30px 20px 30px;
+  text-align: center;
+  width: 1000px;
+}
+
+p.testimonial-name {
+  font-style: normal;
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.contact-button {
+  p {
+    font-size: 18px;
+    padding: 15px;
+    width: 150px;
+    background-color: #DAEDD8;
+    text-align: center;
+    color: #4F7942;
+  }
+  p:hover {
+    cursor: pointer;
+    background-color: #FFFEF9;
+  }
+}
+
+i {
+  color: grey;
+  font-size: 30px;
+  margin: 10px;
 }

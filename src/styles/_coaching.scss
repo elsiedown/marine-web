@@ -1,0 +1,67 @@
+.approach {
+  background-color: #BDDFB9;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 40px;
+  h1 {
+    text-align: center;
+  }
+
+  p { 
+    margin: 20px;
+    
+  }
+}
+
+.approach-text {
+  width: 900px;
+}
+
+.next-steps {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 40px;
+  h1 {
+    text-align: center;
+    margin: 20px;
+  }
+
+  p { 
+    margin: 20px;
+    
+  }
+  span {
+    font-family: 'Kavivanar', cursive;
+    color: #4F7942;
+    font-size: 24px;
+  }
+}
+
+.steps-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 40px;
+  width: 900px;
+  p {
+    text-align: Center;
+  }
+  a {
+    text-decoration: underline;
+  }
+}
+
+
+p.step {
+  font-size: 24px;
+  // font-family: 'Kavivanar', cursive;
+    color: #4F7942;
+}
+
+a:visited {
+  color: grey;
+}

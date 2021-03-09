@@ -1,7 +1,7 @@
 ul.navbar {
   // position: fixed;
   // top: 0;
-  background-color: #9AB87A;
+  background-color: #DAEDD8;
   width: 100%;
   display: flex;
   align-items: center;
@@ -9,16 +9,49 @@ ul.navbar {
   margin: 0;
   height: 45px;
   z-index: 9999;
+  position: fixed;
+  top: 0;
+  h1 {
+    font-family: 'Kavivanar', cursive;
+    margin: 60px;
+  }
+  i {
+    left: 0;
+    position: absolute;
+    color: #4F7942;
+    font-size: 20px;
+    margin-left: 30px;
+    margin-bottom: 30px;
+    top: 0;
+  }
 }
 
 ul.navbar li {
   display: inline;
   padding: 10px;
   margin: 10px;
-  color: black;
+  color: #4F7942;
+  font-size: 13px;
+  text-transform: uppercase;
 }
 
 ul.navbar li:hover {
   color: grey;
 }
+
+.title {
+    font-family: 'Kavivanar', cursive;
+    font-size: 70px;
+    color: #DAEDD8;
+    text-shadow: 2px 2px #4F7942;
+    margin-top: 90px;
+    h1 {
+      margin: 80px;
+    }
+}
+
+h1.title {
+  margin-bottom: 60px;
+}
+
 

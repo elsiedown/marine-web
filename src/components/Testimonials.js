@@ -3,8 +3,9 @@ import React from 'react'
 function Testimonials() {
   return (
     <>
-      <h1>Testimonials</h1>
-      <p>"Marina was amazing - she helped me so much with finding direction and adding purpose to my life. I will always be grateful to Marina for the help she gave me!" - Elsie, 25</p>
+      <p className="testimonial">"I felt listened, understood, optimistic and encouraged. I was able to discuss things in detail and set goals in a tangible and specific way. This made me excited, ready to tackle anything and more confident in what I could achieve."
+      </p>
+      <p className="testimonial-name">Maria, 23</p>
     </>
   )
 }
