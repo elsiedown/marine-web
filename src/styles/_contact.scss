@@ -33,12 +33,16 @@
 }
 
 label.label {
-    color: grey;
+    color: #707070;
     font-weight: 200;
 }
 
 .button {
   font-family: 'Montserrat', sans-serif;
+  color: #707070;
+  display: flex;
+  align-items: Center;
+  justify-content: center;
 }
 
 .names, .contact {
@@ -49,6 +53,7 @@ label.label {
   input {
     width: 100%;
     padding: 5px;
+    color: #707070;
   }
 }
 
@@ -58,4 +63,82 @@ input {
 
 .field {
   margin: 20px;
+}
+
+div.is-fullwidth {
+  margin-left: 10px;
+  width: 740px;
+  margin-top: 15px;
+  label.label {
+    margin-left: 10px;
+  }
+}
+
+button.button {
+  margin-left: 345px;
+  margin-top: 10px;
+}
+div.field.field-button {
+  display: flex;
+  align-items: Center;
+  justify-content: center;
+}
+
+
+
+// #root > section > section > div > div > div > form > div:nth-child(3) {
+//   width: 100%;
+//   input.textarea {
+//     width: 100%;
+//   }
+// }
+
+
+@media only screen and (max-width: 880px) {
+
+  .contact {
+    h1 {
+      text-align:center;
+    }
+  }
+  .contact-form {
+    width: 100%;
+    justify-content: center;
+    h1 {
+      margin: 20px 0px 20px 0px;
+    }
+    p {
+      margin-left: 3px;
+      margin-right: 3px;
+    }
+  }
+  .names, .contact {
+    display: block;
+    justify-content: center;
+    div.field {
+      width: 300px;
+    }
+    input {
+      width: 100%;
+      padding: 5px;
+    }
+  }
+
+  button.button {
+   margin-left: 0;
+  }
+  .column {
+    width: 100%;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+  }
+  div.is-fullwidth {
+    margin-left: 0;
+    margin-top: 0;
+    width: 300px;
+    label.label {
+      margin-left: 0;
+    }
+  }
 }

@@ -9,7 +9,7 @@
   }
   h1 {
     text-align: center;
-    margin: 40px;
+    margin: 40px 0 10px 0;
   }
 }
 
@@ -25,5 +25,14 @@
     object-fit: cover;
     // margin: 30px;
     margin: 10px;
+  }
+}
+
+@media only screen and (max-width: 880px) {
+  .instagram-grid {
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
   }
 }

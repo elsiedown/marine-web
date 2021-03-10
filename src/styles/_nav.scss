@@ -33,6 +33,7 @@ ul.navbar li {
   color: #4F7942;
   font-size: 13px;
   text-transform: uppercase;
+  text-align: center;
 }
 
 ul.navbar li:hover {
@@ -52,6 +53,40 @@ ul.navbar li:hover {
 
 h1.title {
   margin-bottom: 60px;
+}
+
+
+
+@media only screen and (max-width: 880px) {
+  ul.navbar {
+    h1 {
+      text-align: center;
+    }
+    i {
+      left: 0;
+      position: absolute;
+      color: #4F7942;
+      font-size: 20px;
+      margin: 15px 0 0 20px;
+
+    }
+  }
+  h1.title {
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  ul.navbar {
+    i {
+      display: none;
+    }
+    li {
+      padding: 5px;
+      margin: 5px;
+    }
+  }
+
 }
 
 

@@ -20,9 +20,9 @@ function Coaching() {
           <p>Get in touch with me via our <Link to="/contact">contact page</Link>.</p>
           <p className="step"><span>Step 2</span> - Fill out the enquiry form (2-3 minutes)</p>
           <p>I will then send you a form. The form will ask questions about your current situation, your goals, what you would like to get out of life coaching and possible barriers in your way.</p>
-          <p className="step"><span>Step 3 -</span> Free introductory call (30 minutes)</p>
-          <p>In this call we can get to know eachother better, discuss an initial focus for our sessions, and I’ll give you a sense of what to expect.</p>
-          <p className="step"><span>Step 4 - </span>Confirm next steps and an initial plan</p>
+          <p className="step"><span>Step 3 </span>- Free introductory call via Zoom (30 minutes)</p>
+          <p>In this call (via Zoom) we can get to know eachother better, discuss an initial focus for our sessions, and I’ll give you a sense of what to expect.</p>
+          <p className="step"><span>Step 4 </span>- Confirm next steps and an initial plan</p>
           <p>Once you have confirmed you’d like to proceed with coaching we will create a programme that suits you.</p>
         </div>
       </div>

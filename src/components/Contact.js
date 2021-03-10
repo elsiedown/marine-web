@@ -12,7 +12,7 @@ function Contact() {
       <form className="column is-offset">
             <div className="names">
               <div className="field">
-              <label className="label">First Name*</label>
+              <label className="label">First Name *</label>
               <div className="control">
                 <input
                   className={`input`}
@@ -24,13 +24,13 @@ function Contact() {
               </div>
             </div>
             <div className="field">
-              <label className="label">Last Name</label>
+              <label className="label">Last Name (Optional)</label>
               <div className="control">
                 <input
                   className={`input `}
-                  placeholder="Password"
+                  placeholder="Last Name"
 
-                  name="password"
+                  name="lastName"
   
                 />
               </div>
@@ -38,7 +38,7 @@ function Contact() {
             </div>
             <div className="names">
               <div className="field">
-              <label className="label">Email*</label>
+              <label className="label">Email *</label>
               <div className="control">
                 <input
                   className={`input`}
@@ -50,7 +50,7 @@ function Contact() {
               </div>
             </div>
             <div className="field">
-              <label className="label">Phone Number</label>
+              <label className="label">Phone Number (Optional)</label>
               <div className="control">
                 <input
                   className={`input `}
@@ -63,11 +63,11 @@ function Contact() {
             </div>
             </div>
 
-            <div className="field">
+            <div className="is-fullwidth">
               <label className="label">Message *</label>
-              <div className="control">
+              <div className="control is-fullwidth">
                 <textarea
-                  className={`input `}
+                  className='input is-fullwidth'
                   placeholder="Your Message"
 type="textarea"
                   name="message"
@@ -75,7 +75,7 @@ type="textarea"
                 />
               </div>
             </div>
-            <div className="field">
+            <div className="field field-button">
               <button type="submit" className="button">Send</button>
             </div>
           </form>

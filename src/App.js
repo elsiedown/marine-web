@@ -7,6 +7,7 @@ import Home from './components/Home'
 import Coaching from './components/Coaching'
 import Contact from './components/Contact'
 import Footer from './components/Footer'
+import ScrollToTop from './components/ScrollToTop'
 
 
 
@@ -14,7 +15,8 @@ function App() {
   return (
 
 
-        <BrowserRouter>
+    <BrowserRouter>
+        <ScrollToTop />
           <section className="main-layout">
             <Nav />
             <section className="sections-layout">
@@ -27,7 +29,7 @@ function App() {
             </section>
             <Footer />
           </section>
-        </BrowserRouter>
+    </BrowserRouter>
   )
 }
 

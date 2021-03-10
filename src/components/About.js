@@ -4,6 +4,8 @@ import marina from '../assets/marina-two.jpeg'
 import Insta from './Insta'
 
 function About() {
+
+
   return (
     <>
       <section className="about">

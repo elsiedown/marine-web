@@ -42,7 +42,7 @@
 
 .education {
   ul li {
-    color:grey;
+    color:#707070;
     list-style-type: none;
     margin-top: 10px;
   }
@@ -51,4 +51,28 @@
 .image-section {
   display: flex;
   align-items: center;
+}
+
+@media only screen and (max-width: 880px) {
+
+  .about {
+    padding: 12px;
+  }
+  .about-info-main {
+    flex-direction: column;
+  }
+  .about-info {
+    width: 100%
+  }
+
+  .image-section {
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .about img {
+    margin-left: 0;
+  }
 }
