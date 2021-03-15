@@ -10,10 +10,12 @@ function Insta() {
 
   // const [photos, setPhotos] = React.useState('')
 
+  const instaToken = process.env.REACT_APP_MY_API_KEY
+
   React.useEffect(() => {
     const getData = async () => {
       try {
-        const { data } = await axios.get(`https://graph.instagram.com/me/media?fields=id,caption,media_url&access_token=IGQVJWd3VWODR3SUVLS0lMNDljelB0NXV4Q05nbXFKcUFYNVZAfZA3NCWFdtS2pKXzg5TWJveUhveUhjakwxelp4ZAlAta3VlbHgzN3J4S2VhYWhldkxCNUs0ZAHVKaHhGbzJyNi1GaUxzd01ZAVDJYOUZA2eGFqVGpUZA29OQVNR`)
+        const { data } = await axios.get(`https://graph.instagram.com/me/media?fields=id,caption,media_url&access_token=${instaToken}`)
         setPhotos(data)
         console.log(data[0])
       } catch (err) {
@@ -21,7 +23,7 @@ function Insta() {
       }
     }
     getData()
-  }, [])
+  }, [instaToken])
 
   const [photos, setPhotos] = React.useState('')
   const insta = photos.data
