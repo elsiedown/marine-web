@@ -8,12 +8,17 @@ import Testimonials from './Testimonials'
 import Insta from './Insta'
 
 function Home() {
+
+  // React.useEffect(() => {
+  //   window.scrollTo(0, 0)
+  // }, [])
+
   return (
     <>
       <div className="home-intro">
         <img src={marina} alt="marina-logo"></img>
         <div className="intro-text">
-          <p>Hello, my name is Marina. <br></br>I am a mindset coach, mentor, and personal development devotee. I love using my skills to help my clients gain clarity, confidence and purpose.</p>
+          <p>I am a mindset coach who helps driven and ambitious people looking for direction, balance and a ‘why’ to life. Coaching with me focuses on both the internal and external worlds with the aim for clarity, purpose and balance.</p>
         </div>
       </div>
       <Testimonials />

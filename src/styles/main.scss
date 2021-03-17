@@ -1,5 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Kavivanar&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Arima+Madurai:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Arima+Madurai:wght@300&family=Vidaloka&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Arima+Madurai:wght@300&family=Lora&family=Vidaloka&display=swap');
 @import '~bulma/bulma.sass';
 
 @import '_nav.scss';
@@ -8,6 +11,10 @@
 @import '_insta.scss';
 @import '_contact.scss';
 
+
+// font-family: 'Arima Madurai', cursive;
+// font-family: 'Vidaloka', serif;
+// font-family: 'Lora', serif;
 
 // Main Colours
 // Palette 1
@@ -26,7 +33,10 @@
 // #2E382E
 
 
-
+.errorMessage {
+  color: red;
+  font-size: 14px;
+}
 // Palette 2
 
 // Main Styling
@@ -37,7 +47,7 @@ body, html {
   width: 100%;
   min-height: 100%;
   overflow-x: hidden;
-  scroll-behavior: smooth;
+  // scroll-behavior: smooth;
   font-family: 'Montserrat', sans-serif;
   background-color: #FFFEF9;
   p {
