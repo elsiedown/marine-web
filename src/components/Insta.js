@@ -15,8 +15,9 @@ function Insta() {
   React.useEffect(() => {
     const getData = async () => {
       try {
-        const { data } = await axios.get(`https://graph.instagram.com/me/media?fields=id,caption,media_url&access_token=${instaToken}`)
+        const { data } = await axios.get(`https://graph.instagram.com/me/media?fields=id,permalink,caption,media_url&access_token=${instaToken}`)
         setPhotos(data)
+        console.log(data)
         console.log(data[0])
       } catch (err) {
         console.log(err)
@@ -41,15 +42,15 @@ function Insta() {
           <>
             <a href={"https://www.instagram.com/talkwithmarina/"}><p>@talkwithmarina</p></a>
             <div className="instagram-grid">
-              <a href="https://www.instagram.com/talkwithmarina/"><img src={insta[0] ? insta[0].media_url : instaone} alt="insta"></img></a>
-              <a href="https://www.instagram.com/talkwithmarina/"><img src={insta[1] ? insta[1].media_url : instatwo}  alt="insta"></img></a>
-              <a href="https://www.instagram.com/talkwithmarina/"><img src={insta[2] ? insta[2].media_url : instathree}  alt="insta"></img></a>
+              <a href={insta[0] ? insta[0].permalink : "https://www.instagram.com/talkwithmarina/"}><img src={insta[0] ? insta[0].media_url : instaone} alt="insta"></img></a>
+              <a href={insta[1] ? insta[1].permalink : "https://www.instagram.com/talkwithmarina/"}><img src={insta[1] ? insta[1].media_url : instatwo}  alt="insta"></img></a>
+              <a href={insta[2] ? insta[2].permalink : "https://www.instagram.com/talkwithmarina/"}><img src={insta[2] ? insta[2].media_url : instathree}  alt="insta"></img></a>
             </div>
             
           </>
           :
           <>
-            ''
+            
           </>
         }
       </>

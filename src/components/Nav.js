@@ -1,17 +1,18 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+// import { Link } from 'react-router-dom'
 
 function Nav() {
   return (
     <>
+    <a href="/"><h1 className="title">Talk with Marina</h1></a>
       <ul className="navbar">
-      <Link to="/contact"><i class="far fa-envelope"></i></Link>
-        <Link to="/"><li>Home</li></Link>
-        <Link to="/about"><li>About</li></Link>
-        <Link to="/coaching"><li>Work With Me</li></Link>
-        <Link to="/contact"><li>Contact</li></Link>
+      <a href="/contact"><i class="far fa-envelope"></i></a>
+        <a href="/"><li>Home</li></a>
+        <a href="/about"><li>About</li></a>
+        <a href="/coaching"><li>Work With Me</li></a>
+        <a href="/contact"><li>Contact</li></a>
       </ul>
-      <Link to="/"><h1 className="title">Talk with Marina</h1></Link>
+      {/* <a href="/"><h1 className="title">Talk with Marina</h1></a> */}
     </>
   )
 }

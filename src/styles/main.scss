@@ -39,6 +39,10 @@
 }
 // Palette 2
 
+.fly-in{
+  animation: fly-in 1.5s ease;
+}
+
 // Main Styling
 
 body, html {
@@ -47,7 +51,7 @@ body, html {
   width: 100%;
   min-height: 100%;
   overflow-x: hidden;
-  // scroll-behavior: smooth;
+  scroll-behavior: smooth;
   font-family: 'Montserrat', sans-serif;
   background-color: #FFFEF9;
   p {
@@ -245,4 +249,19 @@ i {
     margin-bottom: 40px;
   }
 
+}
+
+@keyframes fly-in {
+  0% {
+    opacity: 0;
+    transform: translateY(300px);
+  }
+  60% {
+    opacity: 0;
+    transform: translateY(300px);
+  }
+  100% {
+      opacity: 1;
+      transform: translateY(0);
+  }
 }

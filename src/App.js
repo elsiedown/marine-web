@@ -23,7 +23,7 @@ function App() {
     <BrowserRouter onUpdate={() => window.scrollTo(0, 0)}>
       <section className="main-layout">
         <Nav />
-        <section className="sections-layout">
+        <section className="sections-layout fly-in">
           <Switch>
             <Route exact path="/" component={Home} />
             <Route path="/about" component={About} />
